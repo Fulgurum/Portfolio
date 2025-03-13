@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<a href="http://127.0.0.1:8000" class="btn"><p>Working Guesstbook</p></a>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guestbook - Jonathan's Portfolio - Leave a comment!</title>
+    
+    <link rel="stylesheet" href="styles.css">
+    <!-- todo CSS NOT RESPONDING TO CHANGE? -->
+</head>
+<!-- Fixed menu -->
+<!-- todo ADD PROJECTS, LINK CV TO PRESENTATION, FIX BROKEN GUESTBOOK -->
+<body>
+    <div class="container">
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="presentation.html">About Me</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="guestbook.html">Guestbook</a></li>
+            </ul>
+        </nav>
+
+<!-- ? cgi deprecated, flask WORKS but does not integrate??? -->
+<!-- ! ISSUE WILL NOT RUN -->
+<!-- todo FIX BROKEN GUESTBOOK, REPLACE??? -->
+        <main class="guestbook-container">
+            <h1>Guestbook</h1>
+            <form action="app.py" method="post"> <!--! THIS %&¤#! -->
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit" class="btn">Sign Guestbook</button>
+            </form>
+            <section class="guestbook-entries">
+                <h2>Previous Entries</h2>
+                <div id="entries">
+                    <!--! entries should dynamically generate here,sqlite,.db python/js? -->
+                    <!-- todo FKING REDO THIS, DEPRECATED METHOD -->
+                </div>
+            </section>
+        </main>
+    </main>
+</div>
+<div class="flex-wrapper">
+    <div class="container">The content</div>
+        <div class="footer">&copy;Jonathan Blixt Nordin — 2025, All. rights reserved.</div>
+</div>
+
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
