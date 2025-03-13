@@ -1,0 +1,195 @@
+/* PORTFOLIO CSS */
+
+/* ########################--FONTS!!!--######################### */
+@font-face{
+    font-family: 'familiarpixels';
+    src: url('familiarpixels.ttf'); /*BEST FONT*/
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+/* General Styles */
+body {
+    font-family: 'familiarpixels';
+    font-size: 42px;
+    margin-left: 0px;
+    padding: 0px;
+    background-image: url("shop.jpg");
+    height: 10px; /* You must set a specified height */
+    background-position: top, left; /* Center the image */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%; /* Resize the background image to cover the entire container */
+    color: #fff;
+    
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 400px auto;
+    height: 100vh;
+    /* width: 300vh; */
+    margin: 0px;
+    padding: 0px;
+    /* box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.493); */
+}
+
+/* Navigation Menu */
+.menu {
+    background: rgba(192, 192, 192, 0.723);
+    padding: 0px;
+    margin: 0px;
+    position: fixed;
+    height: 270px;
+    width: 110px;
+    border: solid, 6px;
+    border-style: groove;
+    border-radius: 5px;
+    color: whitesmoke;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.493);
+}
+.menu ul {
+    list-style: none;
+    padding: 5px;
+}
+.menu ul li {
+    margin: 10px 0;
+}
+.menu ul li a {
+    color: #ffffff;
+    text-shadow: gray 2px 2px;
+    text-decoration: none;
+    font-size: 36px;
+    transition: 0.3s;
+    margin: 5px;
+}
+.menu ul li a:hover {
+    color: #00ffff;
+    text-shadow: 0 0 10px #00ffff;
+}
+
+/* Landing Page Grid */
+.landing-grid {
+    background: rgba(47, 47, 47, 0.5);
+    display: grid;
+    width: 400px;
+    place-items:top, center;
+    padding: 70px;
+    margin: 70px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 10px #00000034, inset 0px 0px 40px 40px #d4d4d4b4;
+}
+
+/* Presentation Flexbox */
+.presentation-flex {
+    background: rgba(47, 47, 47, 0.5);
+    display: flex;
+    width: 800px;
+    flex-direction: column;
+    align-items: left;
+    text-align: flex-start;
+    padding: 100px;
+    margin: 50px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 10px #00000034, inset 0px 0px 40px 40px #d4d4d4b4;
+}
+
+/* Projects Grid */
+.projects-grid {
+    /* background: rgba(255, 255, 255, 0.2); */
+    display: grid;
+
+    grid-template-columns: 330px 330px 330px;
+    grid-template-rows: auto;
+
+    gap: 15px 10px;
+    justify-self: stretch;
+    align-self: center;
+
+
+    flex-direction: column;
+    align-items: left;
+    text-align: flex-start;
+    padding: 100px;
+    margin: 50px;
+    border-radius: 10px;
+    
+    /* box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.3); */
+}
+
+/* Guestbook Grid */
+.guestbook-container {
+    background: rgba(26, 5, 255, 0.613);
+    display: flex;
+    width: 300px;
+    flex-direction: column;
+    align-items: left;
+    text-align: flex-start;
+    padding: 100px;
+    margin: 50px;
+    border-radius: 10px;
+    border: solid;
+    border-style: groove;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.493);
+}
+
+.project {
+    background: rgba(47, 47, 47, 0.5);
+    padding: 10px;
+    text-wrap: left;
+    border-radius: 5px;
+    border: solid;
+    border-style: groove;
+    transition: 0.3s;
+    width: 300px;
+    /* box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.493); */
+    box-shadow: 0px 0px 10px 10px #00000034, inset 0px 0px 40px 40px #d4d4d4b4;
+}
+
+.project:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 20px;
+    margin: 20px 20px;
+    background: #ff00ff9f;
+    color: #fff;
+    border-style: groove;
+    cursor: pointer;
+    transition: 0.3s;
+    text-decoration: none;
+    border-radius: 10px;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.493);
+}
+
+.btn:hover {
+    background: #00ffff;
+    box-shadow: 0 0 10px #00ffff;
+}
+
+
+/* The Footer */
+.flex-wrapper {
+    display: grid;
+    padding-left: 0px;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+/* Footer OLD */
+/* footer {
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+} */
